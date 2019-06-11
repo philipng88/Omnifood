@@ -1,0 +1,84 @@
+@import 'mixins.scss';
+@import 'colors.scss';
+
+footer {
+    background-color: #333;
+    padding: 50px;
+
+    .footer-nav {
+        list-style: none;
+        float: left;
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+
+                &:link,
+                &:visited {
+                    @include footer-link-styles;
+                }
+
+                &:hover,
+                &:active {
+                    color: #ddd;
+                }
+            }
+        }
+    }
+
+    .social-links {
+        list-style: none;
+        float: right;
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+
+                &:link,
+                &:visited {
+                    @include footer-link-styles;
+                }
+
+                #footer-facebook-logo {
+                    @include footer-color-transition;
+                    &:hover {
+                        color: $facebook-blue;
+                    }
+                }
+
+                #footer-google-plus-logo {
+                    @include footer-color-transition;
+                    &:hover {
+                        color: $google-plus-red;
+                    }
+                }
+
+                #footer-twitter-logo {
+                    @include footer-color-transition;
+                    &:hover {
+                        color: $twitter-blue;
+                    }
+                }
+
+                #footer-instagram-logo {
+                    @include footer-color-transition;
+                    &:hover {
+                        color: $instagram-blue;
+                    }
+                }
+            }
+        }
+    }
+}

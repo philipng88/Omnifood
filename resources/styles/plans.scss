@@ -1,0 +1,59 @@
+@import 'colors.scss';
+
+.section-plans {
+    background-color: #f4f4f4;
+
+    .plan-box {
+        background-color: #fff;
+        border-radius: 5px;
+        width: 90%;
+        margin-left: 5%;
+        -webkit-box-shadow: 0 2px 2px #efefef;
+        box-shadow: 0 2px 2px #efefef;
+
+        ul {
+            list-style: none;
+
+            li {
+                padding: 5px 0;
+            }
+        }
+
+        .plan-box-content {
+            padding: 15px;
+            border-bottom: 1px solid #e8e8e8;
+
+            &:first-child {
+                background-color: #fcfcfc;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+
+            &:last-child {
+                text-align: center;
+                border: 0;
+            }
+
+            i {
+                color: $featured-orange;
+                margin-right: 10px;
+            }
+
+            .plan-price {
+                font-size: 300%;
+                margin-bottom: 10px;
+                font-weight: 300;
+                color: $featured-orange;
+
+                span {
+                    font-size: 40%;
+                    font-weight: 700;
+                }
+            }
+
+            .plan-price-meal {
+                font-size: 80%;
+            }
+        }
+    }
+}

@@ -1,7 +1,9 @@
 @media only screen and (max-width: 1200px) {
-    .hero-text-box {
-        width: 100%;
-        padding: 0 2%;
+    header {
+        .hero-text-box {
+            width: 100%;
+            padding: 0 2%;
+        }
     }
 
     .row {
@@ -25,18 +27,18 @@
 
     .steps-box {
         margin-top: 10px;
-    }
 
-    .steps-box:last-child {
-        margin-top: 10px;
+        &:last-child {
+            margin-top: 10px;
+        }
     }
 
     .works-steps {
         margin-bottom: 40px;
-    }
 
-    .works-steps:last-of-type {
-        margin-bottom: 60px;
+        &:last-of-type {
+            margin-bottom: 60px;
+        }
     }
 
     .app-screen {
@@ -45,11 +47,11 @@
 
     .city-feature {
         font-size: 90%;
-    }
-    
-    .city-feature i {
-        width: 17px;
-        margin-right: 10px;
+
+        i {
+            width: 17px;
+            margin-right: 10px;
+        }
     }
 
     .plan-box {
@@ -76,7 +78,8 @@
     }
 
     .row,
-    .hero-text-box {
+    header .hero-text-box {
+        width: 100%;
         padding: 0 4%;
     }
 
@@ -85,50 +88,59 @@
         margin: 0 0 4% 0;
     }
 
-    .main-nav {
-        display: none;
+    .row {
+        .main-nav {
+            display: none;
+            float: left;
+            margin-top: 35px;
+            margin-left: 25px;
+
+            li {
+                display: block;
+
+                a {
+
+                    &:link,
+                    &:visited {
+                        display: block;
+                        border: 0;
+                        padding: 10px 0;
+                        font-size: 100%;
+                    }
+                }
+            }
+        }
+
+        .mobile-nav-icon {
+            display: inline-block;
+        }
     }
 
-    .mobile-nav-icon {
-        display: inline-block;
+    .sticky {
+        .main-nav {
+            margin-top: 10px;
+
+            li {
+                a {
+
+                    &:link,
+                    &:visited {
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+
+        .mobile-nav-icon {
+            margin-top: 10px;
+
+            i {
+                color: #555;
+            }
+        }
     }
 
-    .main-nav {
-        float: left;
-        margin-top: 35px;
-        margin-left: 25px;
-    }
-    
-    .main-nav li {
-        display: block;
-    }
-
-    .main-nav li a:link,
-    .main-nav li a:visited {
-        display: block;
-        border: 0;
-        padding: 10px 0;
-        font-size: 100%;
-    }
-
-    .sticky .main-nav {
-        margin-top: 10px;
-    }
-
-    .sticky .main-nav li a:link,
-    .sticky .main-nav li a:visited {
-        padding: 10px 0;
-    }
-
-    .sticky .mobile-nav-icon {
-        margin-top: 10px;
-    }
-
-    .sticky .mobile-nav-icon i {
-        color: #555;
-    }
-
-    h1 {
+    header .hero-text-box h1 {
         font-size: 180%;
     }
 
@@ -154,7 +166,7 @@
         font-size: 120%;
     }
 
-    .steps-box:first-child {
+    .row .steps-box:first-child {
         text-align: center;
     }
 

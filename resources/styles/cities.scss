@@ -1,0 +1,29 @@
+@import 'colors.scss'; 
+
+.box {
+    img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+}
+
+.city-feature {
+    margin-bottom: 5px;
+    a {
+        &:link,
+        &:visited {
+            color: $featured-orange;
+            text-decoration: none;
+            padding-bottom: 1px;
+            border-bottom: 1px solid $featured-orange;
+            -webkit-transition: border-bottom 0.2s, color 0.2s;
+            transition: border-bottom 0.2s, color 0.2s;
+        }
+        &:hover,
+        &:active {
+            color: #555;
+            border-bottom: 1px solid transparent;
+        }
+    }
+}

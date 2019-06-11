@@ -1,0 +1,56 @@
+@import 'mixins.scss';
+@import 'colors.scss'; 
+.btn {
+    &:link,
+    &:visited {
+        @include button-styles;
+    }
+    &:hover,
+    &:active {
+        background-color: $secondary-orange;
+    }
+}
+
+.btn-full {
+    &:link,
+    &:visited {
+        background-color: $featured-orange;
+        border: 1px solid $featured-orange;
+        color: #fff;
+        margin-right: 15px;
+    }
+    &:hover,
+    &:active {
+        border: 1px solid $secondary-orange;
+        background-color: $secondary-orange;
+    }
+}
+
+.btn-ghost {
+    &:link,
+    &:visited {
+        border: 1px solid $featured-orange;
+        color: $featured-orange;
+    }
+    &:hover,
+    &:active {
+        border: 1px solid $secondary-orange;
+        color: #fff;
+    }
+}
+
+input[type=submit] {
+    @include button-styles;
+    background-color: $featured-orange;
+    border: 1px solid $featured-orange;
+    color: #fff;
+    margin-right: 15px;
+    &:hover {
+        cursor: pointer;
+        background-color: $secondary-orange;
+    }
+    &:active {
+        background-color: $secondary-orange;
+    }
+}
+

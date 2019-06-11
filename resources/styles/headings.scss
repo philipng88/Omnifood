@@ -1,0 +1,38 @@
+@import 'mixins.scss';
+@import 'colors.scss';
+
+h1 {
+    @include heading-tag-styles;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+h2 {
+    @include heading-tag-styles;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+
+    &:after {
+        display: block;
+        height: 2px;
+        background-color: $featured-orange;
+        content: " ";
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
+h3 {
+    @include heading-tag-styles;
+    font-size: 110%;
+    margin-bottom: 15px;
+}
