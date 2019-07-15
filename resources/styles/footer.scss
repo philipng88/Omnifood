@@ -51,31 +51,48 @@ footer {
                     @include footer-link-styles;
                 }
 
-                #footer-facebook-logo {
+                .fa-facebook-f,
+                .fa-google-plus-g,
+                .fa-instagram,
+                .fa-linkedin-in,
+                .fa-pinterest-p,
+                .fa-twitter {
                     @include footer-color-transition;
+                }
+
+                .fa-facebook-f {
                     &:hover {
                         color: $facebook-blue;
                     }
                 }
 
-                #footer-google-plus-logo {
-                    @include footer-color-transition;
+                .fa-google-plus-g {
                     &:hover {
                         color: $google-plus-red;
                     }
                 }
 
-                #footer-twitter-logo {
-                    @include footer-color-transition;
+                .fa-twitter {
                     &:hover {
                         color: $twitter-blue;
                     }
                 }
 
-                #footer-instagram-logo {
-                    @include footer-color-transition;
+                .fa-instagram {
                     &:hover {
                         color: $instagram-blue;
+                    }
+                }
+
+                .fa-linkedin-in {
+                    &:hover {
+                        color: $linkedIn-blue;
+                    }
+                }
+
+                .fa-pinterest-p {
+                    &:hover {
+                        color: $pinterest-red;
                     }
                 }
             }
